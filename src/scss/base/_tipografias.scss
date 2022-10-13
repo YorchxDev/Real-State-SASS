@@ -1,0 +1,26 @@
+@use 'src/scss/base/variables' as v;
+
+h1, h2, h3 {
+    margin: 0 0 v.$separacion 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+p {
+    color: v.$negro;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,74 @@
+@use 'variables' as v;
+@use 'src/scss/base/mixins' as m;
+
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: v.$primario;
+}
+
+.bg-blanco {
+    background-color: v.$blanco;
+}
+
+.margen-menos-10 {
+    margin-top: -10rem;
+}
+
+.pad-bot-0 {
+    padding-bottom: 0 !important;
+}
+
+.seccion {
+    padding: 3rem 0;
+    @include m.tablet { 
+        padding: 8rem 0;
+    }
+}
+
+.h2-sombra1 {
+
+    h2 {
+        font-size: 3.6rem;
+        display: inline-block;
+        
+        &::after {
+            content: '';
+            background-color: v.$primario;
+            height: 1rem;
+            width: 105%;
+            display: block;
+            margin: -1.4rem 0 0 0;
+        }
+    }
+
+
+    
+}
+
+.h2-sombra2 {
+
+    h2 {
+        font-size: 3.6rem;
+        display: inline-block;
+        
+        &::after {
+            content: '';
+            background-color: v.$blanco;
+            height: 1rem;
+            width: 105%;
+            display: block;
+            margin: -1.4rem 0 0 0;
+        }
+    }
+}
+
+.degradado {
+    color: transparent;
+    background: linear-gradient(to right, v.$primario 0%, v.$secundario 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
